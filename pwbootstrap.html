@@ -4,15 +4,64 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>page with bootstrap</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<section class="container">
-		<div class="row">
-			<div class="col-lg-3">Col-3</div>
-			<div class="col-lg-6">Col-6</div>
-			<div class="col-lg-3">Col-3</div>
+		<h1 class="text-center">Демонстрация работы col-*</h1>
+		<div class="row row-margin">
+			<div class="col-lg-3"><p>col-lg-3</p></div>
+			<div class="col-lg-6"><p>col-lg-6</p></div>
+			<div class="col-lg-3"><p>col-lg-3</p></div>
+		</div>
+		<div class="row row-margin">
+			<div class="col-md-2"><p>col-md-2</p></div>
+			<div class="col-md-2"><p>col-md-2</p></div>
+			<div class="col-md-4"><p>col-md-4</p></div>
+			<div class="col-md-2"><p>col-md-2</p></div>
+			<div class="col-md-2"><p>col-md-2</p></div>
+		</div>
+		<div class="row row-margin">
+			<div class="col-sm-1"><p>col-sm-1</p></div>
+			<div class="col-sm-3"><p>col-sm-3</p></div>
+			<div class="col-sm-4"><p>col-sm-4</p></div>
+			<div class="col-sm-3"><p>col-sm-3</p></div>
+			<div class="col-sm-1"><p>col-sm-1</p></div>
+		</div> 
+		<h1 class="text-center">Демонстрация работы FlexBox</h1>
+		<h2 class="text-left">Flex: flex-start, space-between, flex-end</h2>
+		<div class="row row-margin">
+			<div class="col-sm-4 flex x-start">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			<div class="col-sm-4 flex space-between">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			<div class="col-sm-4 flex x-end">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+		</div>
+		<h2 class="text-left">Flex: flex-column, space-between</h2>
+		<div class="row row-margin">
+			<div class="col-sm-12 flex flex-column y-center">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+		</div>
+		<h2 class="text-left">Float: left, right, clearfix</h2>
+		<div class="row row-margin">
+			<div class="col-sm-12">
+				<div class="circle pull-left"></div>
+				<div class="circle pull-right"></div>
+				<div class="circle clearfix"></div>
+			</div>
 		</div>
 	</section>
 </body>
