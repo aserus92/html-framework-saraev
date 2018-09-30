@@ -1,0 +1,339 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {  	
+  	margin-right: auto;
+  	margin-left: auto;
+
+  	border: 2px solid #2a8e9d; 
+}
+
+@media (min-width: 768px) {
+  	.container {
+    	width: 750px;
+  	}
+
+  	.col-sm-1{
+        max-width:8.3333%;
+    }
+
+    .col-sm-2{
+        max-width:16.6666%;
+    }
+
+    .col-sm-3{
+        max-width:25%;
+    }
+
+    .col-sm-4{
+        max-width:33.3333%;
+    }
+
+	.col-sm-5{
+	    max-width:41.6666%;
+	}
+
+    .col-sm-6{
+        max-width:50%;
+    }
+
+    .col-sm-7{
+        max-width:58.3333%;
+    }
+
+	.col-sm-8{
+	    max-width:66.666%;
+	}
+    
+    .col-sm-9{
+        max-width:75%;
+    }
+
+    .col-sm-10{
+        max-width:83.3333%;
+    }
+
+    .col-sm-11{
+        max-width:91.6666%;
+    }
+
+    .col-sm-12{
+        max-width:100%;
+    }
+}
+
+@media (min-width: 992px) {
+  	.container {
+    	width: 970px;
+  	}
+
+  	.col-md-1{
+        max-width:8.3333%;
+    }
+
+    .col-md-2{
+        max-width:16.6666%;
+    }
+
+    .col-md-3{
+        max-width:25%;
+    }
+
+    .col-md-4{
+        max-width:33.3333%;
+    }
+
+	.col-md-5{
+	    max-width:41.6666%;
+	}
+
+    .col-md-6{
+        max-width:50%;
+    }
+
+    .col-md-7{
+        max-width:58.3333%;
+    }
+
+	.col-md-8{
+	    max-width:66.666%;
+	}
+    
+    .col-md-9{
+        max-width:75%;
+    }
+
+    .col-md-10{
+        max-width:83.3333%;
+    }
+
+    .col-md-11{
+        max-width:91.6666%;
+    }
+
+    .col-md-12{
+        max-width:100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+  	.container {
+    	width: 1170px;
+  	}
+
+  	.col-lg-1{
+        max-width:8.3333%;
+    }
+
+    .col-lg-2{
+        max-width:16.6666%;
+    }
+
+    .col-lg-3{
+        max-width:25%;
+    }
+
+    .col-lg-4{
+        max-width:33.3333%;
+    }
+
+	.col-lg-5{
+	        max-width:41.6666%;
+	}
+
+    .col-lg-6{
+        max-width:50%;
+    }
+
+    .col-lg-7{
+        max-width:58.3333%;
+    }
+
+	.col-lg-8{
+	    max-width:66.666%;
+	}
+    
+    .col-lg-9{
+        max-width:75%;
+    }
+
+    .col-lg-10{
+        max-width:83.3333%;
+    }
+
+    .col-lg-11{
+        max-width:91.6666%;
+    }
+
+    .col-lg-12{
+        max-width:100%;
+    }
+
+}
+
+[class*="col-"] {
+    width:100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: #39c2d7;	
+}
+
+.row {
+	display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-margin {
+	margin-bottom: 16px;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.y-center {
+	align-items: center;
+}
+
+.x-start {
+	justify-content: flex-start;
+}
+
+.x-end {
+	justify-content: flex-end;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.logo {
+	display: block;
+	padding: 10px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	background-color: lightyellow;
+}
+
+.button {
+	border: 1px solid #7d9836;
+	background-color: #c1dd8d;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #d1eda0;
+} 
+
+h1 {
+	text-align: center;
+}
+
+input {
+	border: 1px solid #cccccc;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+	background-color: lightyellow;
+}
+
+form input[type="text"]:invalid,
+form input[type="email"]:invalid,
+form textarea:invalid {
+	color: red;
+	border: 1px solid red;
+}
+
+form .checkbox--label {
+	display: flex;
+	flex-direction: row;
+}
+
+.send--button {
+	margin: 10px 0;
+}
+
+.links a {
+	margin-right: 5px;
+
+	color: #464547;
+	text-decoration: none;
+}
+
+.container--main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+	.button--mini {
+		display: none;
+	}
+
+	.links {
+		float: right;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.links a {
+		display: none;
+	}
+
+	.button--mini {
+		float: right;
+	}
+}
