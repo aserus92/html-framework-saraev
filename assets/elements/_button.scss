@@ -1,1 +1,13 @@
-﻿
+﻿.button {
+	border: 1px solid map-get($button-colors, border);
+	background-color: map-get($button-colors, background-color);
+}
+
+.button:hover,
+.button:focus {
+	background-color: $button-background;
+} 
+
+.send--button {
+	margin: 10px 0;
+}

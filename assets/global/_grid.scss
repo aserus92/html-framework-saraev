@@ -1,1 +1,63 @@
-﻿
+﻿.container {  	
+	margin-right: auto;
+	margin-left: auto;
+
+	border: 2px solid #2a8e9d; 
+
+	&--main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+[class*="col-"] {
+    width:100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: map-get($block-color, background-color);
+
+    @include container-width(min);
+    @include container-width(middle);
+    @include container-width(max);	
+}
+
+@for $i from 1 through 12{
+    .col-sm-#{$i} {
+        @include col-(sm,$i);
+    }
+}
+
+@for $i from 1 through 12{
+    .col-md-#{$i} {
+        @include col-(md,$i);
+    }
+}
+
+@for $i from 1 through 12{
+    .col-lg-#{$i} {
+        @include col-(lg,$i);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .button--mini {
+        display: none;
+    }
+
+    .links {
+        float: right;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .links a {
+        display: none;
+    }
+
+    .button--mini {
+        float: right;
+    }
+}

@@ -224,6 +224,10 @@ body {
 	flex-direction: column;
 }
 
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
 .space-between {
 	justify-content: space-between;
 }
@@ -296,11 +300,6 @@ form textarea:invalid {
 	border: 1px solid red;
 }
 
-form .checkbox--label {
-	display: flex;
-	flex-direction: row;
-}
-
 .send--button {
 	margin: 10px 0;
 }
@@ -310,11 +309,6 @@ form .checkbox--label {
 
 	color: #464547;
 	text-decoration: none;
-}
-
-.container--main {
-	display: flex;
-	flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {

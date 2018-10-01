@@ -1,1 +1,8 @@
-﻿
+﻿textarea:invalid {
+	color: $input-error-color;
+	border: $input-error-border;
+}
+
+textarea:focus {
+	background-color: $input-focus-background;
+}

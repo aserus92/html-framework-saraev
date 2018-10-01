@@ -1,1 +1,36 @@
-﻿
+﻿@mixin container-width($media) {
+    @if $media == min{
+        @media only screen and (max-width: $break-sm){
+            width: 750px;
+        }
+    }
+    @else if $media == middle{
+        @media only screen and (min-width: $break-sm + 1) and (max-width: $break-lg - 1){
+            width: 970px;
+            
+        }
+    }
+    @else if $media == max{
+        @media only screen and (min-width: $break-lg){
+            width: 1170px;
+        }
+    }
+}
+
+@mixin col-($size, $number){
+    @if $size == sm{
+        @media only screen and(min-width: $break-sm){
+            max-width: percentage($number/12);
+        }
+    }
+    @else if $size == md{
+        @media only screen and(min-width: $break-md){
+            max-width: percentage($number/12);
+        }
+    }
+    @else if $size == lg{
+        @media only screen and(min-width: $break-lg){
+            max-width: percentage($number/12);
+        }
+    }
+}
